@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: #f1fbff;
+}
+
+
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+/* CSS untuk section home */
+#home {
+    position: relative;
+}
+
+/* CSS untuk gambar dalam carousel */
+.carousel-inner img {
+    height: 600px;
+    object-fit: cover; /* Memastikan gambar tetap berada di tengah */
+}
+
+/* CSS untuk lapisan gelap */
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:200px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Warna latar belakang caption dengan tingkat transparansi 0.5 */
+    color: #fff; /* Warna teks caption */
+    padding: 10px; /* Atur jarak teks dari tepi caption */
+}
+
+
+
+
+
+
+
+#books{
+	margin-top: 100px; 
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+	gap: 20px; /* Jarak antara elemen buku */
+    padding: 20px 0; /* Padding atas dan bawah untuk ruang tambahan */
+}
+
+.book {
+	text-align: center;
+    flex: 0 0 auto; /* Elemen tidak akan mengubah ukuran */
+    width: 250px; /* Lebar elemen buku */
+    padding: 10px; /* Padding dalam elemen buku */
+    border: 2px solid #ddd; /* Garis tepi untuk memisahkan buku */
+    border-radius: 5px; /* Sudut elemen buku dibulatkan */
+}
+
+.book img {
+    width: 200px;
+	height: auto;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.book p {
+    font-size: 16px;
+}
+
+.checkout {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* CSS untuk tombol previous dan next */
+.prev-button, .next-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px; /* Membuat tombol berbentuk bulat */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+    transition: background-color 0.3s, transform 0.2s; /* Efek transisi saat digulir */
+
+    /* Style tambahan saat tombol dihover */
+    &:hover {
+        background-color: #0056b3;
+        transform: scale(1.05); /* Mengubah ukuran tombol saat dihover */
+    }
+}
+
+
+
+#about {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+	margin-top: 100px;
+
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+#teams {
+    margin-top: 50px; /* Menambahkan jarak di atas elemen */
+    margin-bottom: 100px; /* Menambahkan jarak di bawah elemen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+.title {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Menambahkan jarak antara teks "Our Team" dan card */
+    width: 100%;
+    font-size: 24px;
+}
+  
+
+.card {
+    width: 300px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+
+
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Style dasar footer */
+.footer {
+    background-color: #f5f5f5;
+    color: black;
+    margin-top: 30px; /* Menambahkan jarak atas sebesar 30px */
+    padding: 50px 0;
+}
+
+
+/* Style kontainer box dalam footer */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style setiap box dalam footer */
+.box {
+    flex: 0 0 25%; /* 25% lebar setiap box */
+    text-align: left;
+    padding: 20px;
+}
+
+/* Style tautan dalam setiap box */
+.box a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* Style ikon dalam tautan */
+.box a i {
+    margin-right: 10px;
+}
+
+/* Style peta dalam footer */
+.map {
+    width: 100%;
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+/* Style ikon media sosial */
+.share {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.share a {
+    font-size: 24px;
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Style kredit footer */
+.credit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style nama penulis */
+.credit span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.img-area img {
+		width: 100%;
+	}
+    .box {
+        flex: 0 0 50%; /* 50% lebar setiap box pada layar kecil */
+    }
+    .map {
+        max-width: 100px; /* Mengurangi lebar peta pada layar kecil */
+    }
+    .share {
+        margin-top: 20px;
+    }
+
+    #prevButton, #nextButton {
+        display: none;
+    }
+
+    .carousel-caption {
+        height: auto; /* Atur tinggi otomatis untuk mengakomodasi konten dalam caption */
+        padding: 20px; /* Atur jarak teks dari tepi caption lebih besar */
+    }
+
+    .carousel-caption {
+        bottom: 20px;
+        padding: 100px; /* Atur jarak teks dari tepi caption pada mode responsif */
+    }
+
+    .carousel-caption.d-none.d-md-block {
+        /* Sesuaikan properti CSS sesuai kebutuhan di sini */
+        background: rgba(0, 0, 0, 0.7); /* Contoh: latar belakang semi-transparan */
+        color: #fff; /* Contoh: warna teks putih */
+        padding: 100px; /* Contoh: tambahkan jarak dari tepi caption */
+    }
+
+	
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+
+	.slider {
+        flex-direction: column; /* Membuat buku menumpuk satu di bawah yang lain */
+        align-items: center; /* Pusatkan buku di tengah */
+        overflow-x: hidden; /* Nonaktifkan horizontal scroll pada layar kecil */
+    }
+
+    .book {
+        width: 100%; /* Elemen buku mengambil lebar penuh */
+        margin-bottom: 20px; /* Jarak antara buku pada layar kecil */
+    }
+
+    
+    #prevButton, #nextButton {
+        display: none;
+    }
+
+}
